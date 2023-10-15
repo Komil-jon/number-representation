@@ -26,8 +26,32 @@ void selection(){
 
 }
 
+
+void true_false() {
+    int a;
+    do {
+        cout << "Enter a number between 1 and 100: ";
+        cin >> a;
+    } while (a <= 0 || a >= 101);
+}
+
+int select(){
+    int a; int b;
+    cin >> a;
+    cin >> b;
+    if (a==b){
+        cout << 'yaxshi' ;
+    } else if (a>b){
+        cout << 'ya' ;
+    } else{
+        cout << 'yamon' ;
+    }
+}
+
 int main() {
     //cout << calculator() ;
-    selection();
+    //selection();
+    //true_false();
+    select();
     return 0;
 }
